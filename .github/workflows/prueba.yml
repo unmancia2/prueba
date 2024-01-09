@@ -1,0 +1,17 @@
+# Archivo: .github/workflows/prueba.yml
+
+name: Prueba de GitHub Actions
+
+on: [push]
+
+jobs:
+  prueba:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del Repositorio
+        uses: actions/checkout@v2
+
+      - name: Mostrar Contenido del Archivo
+        run: cat prueba.txt
+
